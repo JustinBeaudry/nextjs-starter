@@ -1,6 +1,7 @@
 {
-  "name": "justinbeaudry.dev",
-  "version": "0.1.0",
+  "name": "nextjs-starter",
+  "version": "1.0.0",
+  "description": "NextJS starter with React 18, MUI v5 (emotion), Typescript and light/dark mode toggle",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,16 +10,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "11.7.1",
+    "@emotion/react": "11.9.0",
+    "@emotion/server": "11.4.0",
+    "@emotion/styled": "11.8.1",
+    "@fontsource/anonymous-pro": "4.5.6",
+    "@mui/icons-material": "5.6.2",
+    "@mui/material": "5.6.2",
+    "lodash.flow": "^3.5.0",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
   "devDependencies": {
+    "@types/lodash.flow": "^3",
     "@types/node": "17.0.25",
     "@types/react": "18.0.5",
     "@types/react-dom": "18.0.1",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
+    "prettier": "2.6.2",
     "typescript": "4.6.3"
-  }
+  },
+  "packageManager": "yarn@3.2.0"
 }
