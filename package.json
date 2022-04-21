@@ -1,7 +1,7 @@
 {
   "name": "nextjs-starter",
   "version": "1.0.0",
-  "description": "NextJS 12 starter with React 18, MUI v5 (emotion), Typescript and light/dark mode toggle",
+  "description": "NextJS 12 starter with React 18, MUI v5 (emotion, light/dark mode support), Typescript, Jest, Testing Library, and Storybook support",
   "private": true,
   "scripts": {
     "dev": "next dev",

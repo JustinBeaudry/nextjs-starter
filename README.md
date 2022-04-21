@@ -1,4 +1,4 @@
-NextJS 12 Starter template with React 18, MUI v5 (emotion), Typescript, and light/dark mode toggle.
+NextJS 12 starter with React 18, MUI v5 (emotion, light/dark mode support), Typescript, Jest, Testing Library, and Storybook support
 
 ## Getting Started
 
