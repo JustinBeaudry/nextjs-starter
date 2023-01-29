@@ -26,8 +26,13 @@ export default function App(props: AppProps) {
         <Box sx={{
           color: 'text.primary',
           bgcolor: 'background.default',
-          width: '100%',
-          height: '100%'
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          overflowX: 'hidden',
+          overflowY: 'auto'
         }}>
           <CssBaseline />
           <Box sx={{ position: 'absolute', top: 10, right: 10 }}>
