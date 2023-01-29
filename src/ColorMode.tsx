@@ -4,7 +4,7 @@ import { darkTheme, lightTheme } from './theme'
 import ColorModeContext from './ColorModeContext'
 import { ThemeProvider } from '@mui/material/styles'
 
-const ColorMode: FC = ({ children }) => {
+const ColorMode: FC<PropsWithChildren<{}>> = ({ children }) => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
   const [mode, setMode] = useState(prefersDarkMode ? 'dark' : 'light')
   const colorMode = useMemo(
