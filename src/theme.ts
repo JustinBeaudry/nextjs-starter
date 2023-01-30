@@ -9,7 +9,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
 			main: mode === 'dark' ? '#fff' : 'rgba(0, 0, 0, 0.87)'
 		},
 		secondary: {
-			main: mode === 'dark' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.6'
+			main: mode === 'dark' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.6)'
 		},
 		background: {
 			...(mode === 'dark'
