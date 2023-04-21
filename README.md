@@ -1,4 +1,4 @@
-NextJS 12 starter with React 18, MUI v5 (emotion, light/dark mode support), Typescript, Jest, Testing Library, and Storybook support
+NextJS 13 starter with React 18, MUI v5 (emotion, light/dark mode support), Typescript, Jest, Testing Library, and Storybook support
 
 This repo also uses Yarn2, and has yarn bundled in the `.yarn/releases` folder
 
