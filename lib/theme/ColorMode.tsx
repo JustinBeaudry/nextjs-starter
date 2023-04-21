@@ -1,7 +1,11 @@
 import { FC, PropsWithChildren, useMemo, useState } from 'react'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { ThemeProvider } from '@mui/material/styles'
+<<<<<<< HEAD:lib/theme/ColorMode.tsx
 import { darkTheme, lightTheme, MODES, isLight } from './index'
+=======
+import { darkTheme, lightTheme, MODES, isLight } from './theme'
+>>>>>>> fafd3d0 (moves src to lib, refactors theme):lib/ColorMode.tsx
 import ColorModeContext from './ColorModeContext'
 
 const ColorMode: FC<PropsWithChildren<{}>> = ({ children }) => {

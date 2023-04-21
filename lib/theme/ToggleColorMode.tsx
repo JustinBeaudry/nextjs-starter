@@ -4,7 +4,11 @@ import IconButton from '@mui/material/IconButton'
 import Brightness4Icon from '@mui/icons-material/Brightness4'
 import Brightness7Icon from '@mui/icons-material/Brightness7'
 import ColorModeContext from './ColorModeContext'
+<<<<<<< HEAD:lib/theme/ToggleColorMode.tsx
 import { isLight } from './index'
+=======
+import { isLight } from './theme'
+>>>>>>> fafd3d0 (moves src to lib, refactors theme):lib/ToggleColorMode.tsx
 
 const ToggleColorMode = () => {
   const theme = useTheme()
