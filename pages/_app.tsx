@@ -3,9 +3,9 @@ import type { AppProps as NextAppProps } from 'next/app'
 import CssBaseline from '@mui/material/CssBaseLine'
 import { CacheProvider, EmotionCache } from '@emotion/react'
 import Box from '@mui/material/Box'
-import createEmotionCache from '../lib/createEmotionCache'
-import ColorMode from '../lib/ColorMode'
-import ToggleColorMode from '../lib/ToggleColorMode'
+import createEmotionCache from '../lib/theme/createEmotionCache'
+import ColorMode from '../lib/theme/ColorMode'
+import ToggleColorMode from '../lib/theme/ToggleColorMode'
 
 import '@fontsource/anonymous-pro'
 

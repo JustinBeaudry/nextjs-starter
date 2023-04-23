@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren, useMemo, useState } from 'react'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { ThemeProvider } from '@mui/material/styles'
-import { darkTheme, lightTheme, MODES, isLight } from './theme'
+import { darkTheme, lightTheme, MODES, isLight } from './index'
 import ColorModeContext from './ColorModeContext'
 
 const ColorMode: FC<PropsWithChildren<any>> = ({ children }) => {

@@ -1,7 +1,7 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import createEmotionServer from '@emotion/server/create-instance'
 import { lightTheme as theme } from '../lib/theme'
-import createEmotionCache from '../lib/createEmotionCache'
+import createEmotionCache from '../lib/theme/createEmotionCache'
 
 export default class Document extends NextDocument {
   render() {
