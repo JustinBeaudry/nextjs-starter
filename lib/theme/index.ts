@@ -76,7 +76,7 @@ const dark = {
 
 const getDesignTokens = (mode: PaletteMode) => ({
   ...base,
-  ...(mode === MODES.light ? light : dark)
+  ...(isLight(mode) ? light : dark)
 })
 
 const createTheme = flow([getDesignTokens, createMuiTheme])
