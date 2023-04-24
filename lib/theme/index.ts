@@ -55,8 +55,8 @@ const dark = {
       main: 'rgba(255, 255, 255, 0.7)'
     },
     background: {
-      default: '#fff',
-      paper: '#fff'
+      default: '#121212',
+      paper: '#121212'
     },
     text: {
       primary: '#fff',
