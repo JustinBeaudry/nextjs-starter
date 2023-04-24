@@ -4,7 +4,7 @@
   "description": "NextJS 13 starter with React 18, MUI v5 (emotion, light/dark mode support), Typescript, Jest, Testing Library, and Storybook support",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
