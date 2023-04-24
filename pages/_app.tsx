@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import type { AppProps as NextAppProps } from 'next/app'
-import CssBaseline from '@mui/material/CssBaseLine'
+import CssBaseline from '@mui/material/CssBaseline'
 import { CacheProvider, EmotionCache } from '@emotion/react'
 import Box from '@mui/material/Box'
 import createEmotionCache from '../lib/theme/createEmotionCache'
