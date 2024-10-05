@@ -1,10 +1,10 @@
 {
   "name": "nextjs-starter",
-  "version": "2.0.0",
-  "description": "NextJS 13 starter with React 18, MUI v5 (emotion, light/dark mode support), Typescript, Jest, Testing Library, and Storybook support",
+  "version": "3.0.0-alpha",
+  "description": "NextJS 14 starter with React 18, MUI v6, Pigment CDD, Typescript, Jest, Testing Library, and Storybook support",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -12,56 +12,53 @@
     "postinstall": "husky install",
     "test": "jest --passWithNoTests",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "husky"
   },
   "dependencies": {
-    "@emotion/cache": "^11.7.1",
-    "@emotion/react": "^11.9.0",
-    "@emotion/server": "^11.4.0",
-    "@emotion/styled": "^11.8.1",
-    "@fontsource/anonymous-pro": "^4.5.6",
-    "@mui/icons-material": "^5.6.2",
-    "@mui/material": "^5.6.2",
-    "@pigment-css/react": "^0.0.24",
-    "lodash.flow": "^3.5.0",
+    "@mui/icons-material": "6.x.x",
+    "@mui/material": "6.x.x",
+    "@mui/material-pigment-css": "6.x.x",
+    "@pigment-css/react": "0.x.x",
+    "lodash.flow": "3.5.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
-    "@pigment-css/nextjs-plugin": "^0.0.24",
-    "@storybook/addon-essentials": "^6.4.22",
-    "@storybook/addon-interactions": "^6.4.22",
-    "@storybook/react": "^6.4.22",
-    "@testing-library/dom": "^8.13.0",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^14.1.1",
-    "@types/lodash.flow": "^3",
-    "@types/node": "^17.0.25",
-    "@types/react": "^18.0.5",
-    "@types/react-dom": "^18.0.1",
-    "@types/testing-library__jest-dom": "^5",
-    "@washingtonpost/storybook-addon-web-vitals": "^0.3.0",
-    "eslint": "^8.13.0",
+    "@pigment-css/nextjs-plugin": "0.x.x",
+    "@softwareventures/precise-commits": "4.x.x",
+    "@storybook/addon-essentials": "8.x.x",
+    "@storybook/addon-interactions": "8.x.x",
+    "@storybook/nextjs": "8.x.x",
+    "@storybook/react": "8.x.x",
+    "@testing-library/dom": "10.x.x",
+    "@testing-library/jest-dom": "6.x.x",
+    "@testing-library/react": "16.x.x",
+    "@testing-library/user-event": "14.x.x",
+    "@types/lodash.flow": "3.5.9",
+    "@types/node": "20.x.x",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/testing-library__jest-dom": "6.x.x",
+    "@washingtonpost/storybook-addon-web-vitals": "0.x.x",
+    "eslint": "9.x.x",
     "eslint-config-next": "latest",
-    "husky": "^7.0.0",
-    "jest": "^27.5.1",
-    "lint-prepush": "^2.2.1",
-    "lint-staged": "^12.4.0",
-    "precise-commits": "^1.0.2",
-    "prettier": "^2.6.2",
-    "storybook-addon-next-router": "^3.1.1",
-    "typescript": "^4.6.3"
+    "husky": "9.x.x",
+    "jest": "29.x.x",
+    "lint-prepush": "3.x.x",
+    "lint-staged": "15.x.x",
+    "prettier": "3.x.x",
+    "typescript": "5.x.x"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["eslint"]
+    "**/*.{js,mjs,jsx,ts,tsx}": ["eslint"]
   },
   "lint-prepush": {
     "base": "main",
     "tasks": {
-      "*.{js,jsx,ts,tsx}": ["eslint"]
+      "**/*.{js,mjs,jsx,ts,tsx}": ["eslint"]
     }
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@4.5.0"
 }
