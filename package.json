@@ -46,6 +46,7 @@
     "eslint-config-next": "latest",
     "husky": "9.x.x",
     "jest": "29.x.x",
+    "jest-environment-jsdom": "^29.7.0",
     "lint-prepush": "3.x.x",
     "lint-staged": "15.x.x",
     "prettier": "3.x.x",
