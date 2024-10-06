@@ -1,5 +1,3 @@
-'use client'
-
 import type { NextPage } from 'next'
 import Container from '@mui/material-pigment-css/Container'
 import Typography from '@mui/material/Typography'
