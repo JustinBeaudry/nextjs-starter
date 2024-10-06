@@ -1,18 +1,22 @@
-import { withPigment } from '@pigment-css/nextjs-plugin'
-import { createTheme } from '@mui/material'
-import { base, light } from './lib/theme/palette.mjs'
+import { withPigment, extendTheme } from '@pigment-css/nextjs-plugin'
+import { light, dark } from './lib/theme.mjs'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {}
 
-const lightTheme = createTheme({ ...base, light })
+const theme = extendTheme({
+  colorSchemes: {
+    light,
+    dark
+  }
+})
 
 /**
  * @type {import('@pigment-css/nextjs-plugin').PigmentOptions}
  */
 const pigmentConfig = {
   transformLibraries: ['@mui/material'],
-  theme: lightTheme
+  theme
 }
 
 export default withPigment(nextConfig, pigmentConfig)

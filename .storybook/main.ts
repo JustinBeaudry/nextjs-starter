@@ -1,7 +1,7 @@
 import { StorybookConfig } from '@storybook/nextjs'
 
 const config: StorybookConfig = {
-  stories: ['../components'],
+  stories: ['../src/components'],
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',

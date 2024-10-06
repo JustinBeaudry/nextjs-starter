@@ -1,7 +1,7 @@
 {
   "name": "nextjs-starter",
   "version": "3.0.0-alpha",
-  "description": "NextJS 14 starter with React 18, MUI v6, Pigment CDD, Typescript, Jest, Testing Library, and Storybook support",
+  "description": "A batteries-included, highly opinionated Next.js starter with MUI v6, Typescript, Testing Library/Jest, Storybook, Eslint, Prettier, and Husky git hooks all wired up and ready to go.",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -20,12 +20,12 @@
     "@mui/material": "6.x.x",
     "@mui/material-pigment-css": "6.x.x",
     "@pigment-css/react": "0.x.x",
-    "lodash.flow": "3.5.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@babel/core": "7.25.2",
     "@pigment-css/nextjs-plugin": "0.x.x",
     "@softwareventures/precise-commits": "4.x.x",
     "@storybook/addon-essentials": "8.x.x",
@@ -36,7 +36,7 @@
     "@testing-library/jest-dom": "6.x.x",
     "@testing-library/react": "16.x.x",
     "@testing-library/user-event": "14.x.x",
-    "@types/lodash.flow": "3.5.9",
+    "@types/babel__core": "^7",
     "@types/node": "20.x.x",
     "@types/react": "latest",
     "@types/react-dom": "latest",

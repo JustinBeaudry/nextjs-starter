@@ -28,6 +28,12 @@
       "options": {
         "parser": "yaml"
       }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "parser": "css"
+      }
     }
   ]
 }
