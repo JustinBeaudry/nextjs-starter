@@ -59,6 +59,7 @@ export const light = {
 }
 
 export default createTheme({
+  cssVariables: true,
   colorSchemes: {
     light,
     dark
