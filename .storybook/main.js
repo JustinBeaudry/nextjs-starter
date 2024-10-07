@@ -2,7 +2,7 @@ const path = require('path')
 const toPath = filePath => path.join(process.cwd(), filePath)
 
 module.exports = {
-  stories: ['../components'],
+  stories: ['../src/components'],
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
