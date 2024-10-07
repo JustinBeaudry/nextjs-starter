@@ -1,29 +1,14 @@
-import { createTheme as createMuiTheme } from '@mui/material/styles'
-import { PaletteMode } from '@mui/material'
-import flow from 'lodash.flow'
+'use client'
 
-export enum MODES {
-  'light' = 'light',
-  'dark' = 'dark'
-}
+import { createTheme } from '@mui/material/styles'
 
-export const isLight = (mode: PaletteMode) => mode === MODES.light
-export const isDark = (mode: PaletteMode) => mode === MODES.dark
-
-const base = {
-  typography: {
-    fontFamily: 'Anonymous Pro'
-  }
-}
-
-const light = {
+export const dark = {
   palette: {
-    mode: MODES.light,
     primary: {
       main: 'rgba(0, 0, 0, 0.87)'
     },
     secondary: {
-      main: 'rgba(0, 0, 0, 0.6'
+      main: 'rgba(0, 0, 0, 0.6)'
     },
     background: {
       default: '#fff',
@@ -45,9 +30,8 @@ const light = {
   }
 }
 
-const dark = {
+export const light = {
   palette: {
-    mode: MODES.dark,
     primary: {
       main: '#fff'
     },
@@ -74,12 +58,10 @@ const dark = {
   }
 }
 
-const getDesignTokens = (mode: PaletteMode) => ({
-  ...base,
-  ...(isLight(mode) ? light : dark)
+export default createTheme({
+  cssVariables: true,
+  colorSchemes: {
+    light,
+    dark
+  }
 })
-
-const createTheme = flow([getDesignTokens, createMuiTheme])
-
-export const lightTheme = createTheme(MODES.light)
-export const darkTheme = createTheme(MODES.dark)
