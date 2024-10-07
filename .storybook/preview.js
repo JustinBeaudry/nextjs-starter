@@ -1,6 +1,6 @@
 import { RouterContext } from 'next/dist/shared/lib/router-context'
 import { ThemeProvider } from '@mui/material/styles'
-import { lightTheme } from '../src/theme'
+import { lightTheme } from '$/theme'
 
 export const parameters = {
   actions: { argTypesRegex: '^on.*' },
